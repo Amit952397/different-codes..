@@ -1,0 +1,10 @@
+db.books.deleteMany({}); 
+db.books.insertMany([
+  { "_id":"B1001","title":"The Alchemist","author":"Paulo Coelho","genre":"Fiction","available_copies":5 },
+  { "_id":"B1002","title":"1984","author":"George Orwell","genre":"Classic","available_copies":3 },
+  { "_id":"B1003","title":"To Kill a Mockingbird","author":"Harper Lee","genre":"Classic","available_copies":7 },
+  { "_id":"B1004","title":"Pride and Prejudice","author":"Jane Austen","genre":"Romance","available_copies":4 }
+]); 
+db.books.find();
+
+
