@@ -1,3 +1,5 @@
+5.1
+
 db.books.deleteMany({}); 
 db.books.insertMany([
   { "_id":"B1001","title":"The Alchemist","author":"Paulo Coelho","genre":"Fiction","available_copies":5 },
@@ -7,4 +9,17 @@ db.books.insertMany([
 ]); 
 db.books.find();
 
+6.1
 
+db.products.deleteMany({});
+db.products.insertMany([{ "_id":"P1001","name":"Wireless Mouse","category":"Electronics","price":799,"stock_quantity":50 },{ "_id":"P1002","name":"Mechanical Keyboard","category":"Electronics","price":2499,"stock_quantity":20 },{ "_id":"P1003","name":"Gaming Headset","category":"Electronics","price":1999,"stock_quantity":15 },{ "_id":"P1004","name":"USB-C Cable","category":"Accessories","price":299,"stock_quantity":100 },{ "_id":"P1005","name":"Laptop Stand","category":"Accessories","price":999,"stock_quantity":30 },{ "_id":"P1020","name":"Office Desk","category":"Furniture","price":8999,"stock_quantity":5 }]);
+db.products.find();
+
+6.2
+
+db.products.find({ "category":"Electronics" });
+
+
+6.3
+
+db.products.find().sort({ "price": -1 });
